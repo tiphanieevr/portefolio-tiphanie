@@ -28,9 +28,9 @@ Passionnée par le durcissement des systèmes, l'architecture réseau et la séc
 ---
 
 ## 📁 Mes Projets
-* 🛡️ **[Hackathon BAI 2026 – Sécurisation d'Infrastructure Réseau](./hackathon-2026)** *(Cluster OPNSense, VPN IPSec/OpenVPN, Suricata, CrowdSec, DMZ, HAProxy)*
-* 🏗️ **Sécurisation et Supervision d'une Infrastructure IT Virtualisée** *(Active Directory, GPOs, DNS/DHCP, Analyse de logs)*
-* 🔀 **Design de LAN Cisco** *(Modèle 2-tiers, VLANs, Trunks, VTP, RSTP, HSRP)*
+* [cite_start]🛡️ **[Hackathon BAI 2026 – Sécurisation d'Infrastructure Réseau](./hackathon-2026)** *(Cluster OPNSense, VPN IPSec/OpenVPN, Suricata, CrowdSec, DMZ, HAProxy)* [cite: 108, 110, 111]
+* [cite_start]🏗️ **[Sécurisation et Supervision d'une Infrastructure IT Virtualisée](./infra-virtualisee)** *(Active Directory, GPOs, DNS/DHCP, Analyse de logs)* [cite: 96, 99, 100, 101, 104]
+* [cite_start]🔀 **[Design de LAN Cisco](./lan-design-cisco)** *(Modèle 2-tiers, VLANs, Trunks, VTP, RSTP, HSRP)* [cite: 21, 22]
 
 ---
 
