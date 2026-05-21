@@ -10,5 +10,4 @@
 * [cite_start]**Services Réseau & Sécurité :** Déploiement des services **DHCP**, translation d'adresses **NAT/PAT**, segmentation des flux et validation complète de la connectivité[cite: 22].
 
 ## 📁 Livrables du projet
-* Fichier de topologie réseau `.pkt` (Cisco Packet Tracer).
-* [cite_start]Rapport technique de validation et tests de connectivité[cite: 22].
+* 📥 **[Télécharger le fichier de topologie Packet Tracer (.pkt)](./LAN%20Design%20(NNONNANG%20Tiphanie)%201.pkt)**
