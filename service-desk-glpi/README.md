@@ -26,13 +26,22 @@ Pour ce faire, j'ai exécuté un test d'interconnexion à l'aide de la commande 
 ```bash
 admin-local@srv-ticketing:~$ ping -c 4 192.168.1.200
 
+<br><br>
+
+---
+
 ## 💻 Étape 2 : Installation de l'Environnement Serveur LAMP
 
 Une fois la connectivité réseau validée, l'étape suivante consiste à préparer le serveur à recevoir l'application GLPI. Pour cela, j'ai déployé l'environnement indispensable **LAMP** (Linux, Apache2, MariaDB, PHP). 
 
 Cette phase installe le serveur Web chargé de distribuer les pages, le moteur de base de données relationnelle ainsi que PHP 8.1 avec les extensions applicatives requises pour le traitement des scripts.
 
+<br>
+
 ![Installation de l'environnement LAMP](03-installation-environnement-lamp.png)
+
+<br>
+
 *Suivi de la fin du processus d'installation des paquets et bascule automatique vers le module Apache mpm_prefork.*
 
 ---
