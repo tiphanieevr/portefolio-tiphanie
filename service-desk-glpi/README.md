@@ -17,13 +17,11 @@ Pour garantir l'isolation et la stabilité des services, l'infrastructure s'appu
 
 ## 💻 Étape 1 : Interconnexion Réseau et Validation IP
 
-![Test d'interconnexion réseau](02-test-ping-interconnexion.png)
-*Validation de la connectivité réseau avec 0% de perte de paquets lors du test de ping.*
 La première phase absolue avant d'installer le moindre composant applicatif consiste à valider la connectivité réseau de notre serveur Linux Ubuntu. Cette étape permet de s'assurer que la machine virtuelle communique correctement à travers le commutateur virtuel de l'hyperviseur et qu'elle peut joindre sa passerelle réseau.
 
 Pour ce faire, j'ai exécuté un test d'interconnexion à l'aide de la commande `ping` vers l'adresse IP cible de la passerelle de l'infrastructure (`192.168.1.200`).
-
-<br><br>
+![Test d'interconnexion réseau](02-test-ping-interconnexion.png)
+*Validation de la connectivité réseau avec 0% de perte de paquets lors du test de ping.*
 
 ---
 
