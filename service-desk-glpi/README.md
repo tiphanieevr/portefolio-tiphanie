@@ -169,7 +169,7 @@ Cette étape confirme la réussite de l'opération en affichant un message de su
 
 <br>
 
-![Initialisation de la base de données réussie](11-initialisation-base-de-donnees-reussie-glpi.png)
+![Initialisation de la base de données réussie](./images/11-initialisation-base-de-donnees-glpi.png)
 
 <br>
 
