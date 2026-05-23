@@ -15,6 +15,15 @@ Passionnée par le durcissement des systèmes, l'architecture réseau et la séc
 ## 🛠️ Stack Technique & Compétences
 
 ### 💻 Systèmes & Virtualisation
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) ![Windows Server](https://img.shields.io/badge/Windows%20Server-0078D4?style=for-the-badge&logo=microsoft&logoColor=white) ![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+
+### 🌐 Réseaux & Sécurité
+![Cisco](https://img.shields.io/badge/Cisco-11589C?style=for-the-badge&logo=cisco&logoColor=white) ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
+
+### 🎫 Gestion de Services IT (ITSM)
+![GLPI](https://img.shields.io/badge/GLPI-9B59B6?style=for-the-badge&logo=glpi&logoColor=white)
+
+### 💻 Systèmes & Virtualisation
 * **OS :** Windows Server, Linux (Debian, Ubuntu, Kali Linux)
 * **Services :** Active Directory, GPO, DNS, DHCP, Partages réseau & droits NTFS, Serveur Web Apache2/Nginx, Base de données MariaDB/MySQL
 * **Hyperviseurs :** VMware, Hyper-V, Proxmox
