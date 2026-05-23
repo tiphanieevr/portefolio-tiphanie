@@ -24,7 +24,3 @@ Pour ce faire, j'ai exécuté un test d'interconnexion à l'aide de la commande 
 ```bash
 admin-local@srv-ticketing:~$ ping -c 4 192.168.1.200
 
-![Test d'interconnexion réseau](02-test-ping-interconnexion.png)
-*Validation de la connectivité réseau avec 0% de perte de paquets lors du test de ping.*
-
----
