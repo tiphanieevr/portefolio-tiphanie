@@ -1,51 +1,29 @@
 # 🎫 Déploiement, Configuration et Sécurisation d'une Plateforme de Service Desk (Ticketing) : GLPI
 
-## 📝 Présentation Globale du Projet
-Ce projet consiste en la mise en production, l'optimisation et la sécurisation complète de la solution Open Source **GLPI (Gestionnaire Libre de Parc Informatique)** au sein d'un environnement virtualisé d'entreprise.
+## 📝 Présentation du Projet
+Dans le cadre de ma formation en Administration Systèmes, Réseaux et Sécurité, j'ai réalisé la mise en production complète et le durcissement d'une plateforme de **Service Desk (Ticketing)** basée sur la solution Open Source **GLPI (Gestionnaire Libre de Parc Informatique)**.
 
-L'objectif central de cette réalisation technique est de fournir au service informatique un outil de **Service Desk (Ticketing)** et de gestion des incidents moderne, structuré selon les bonnes pratiques ITIL. Cette plateforme centralise l'intégralité des demandes d'assistance des collaborateurs, planifie les interventions des équipes techniques et assure la continuité de service des infrastructures de l'entreprise.
+L'objectif de cette mission est de fournir à une infrastructure d'entreprise un point de contact unique pour la gestion des incidents et des demandes d'assistance, structuré selon les bonnes pratiques du référentiel ITIL. Cette solution permet de centraliser les demandes des utilisateurs, d'optimiser le temps de traitement des techniciens et d'assurer un suivi rigoureux du parc informatique.
 
----
-
-## 🛠️ Spécifications de l'Environnement Technique
-Pour garantir la stabilité de l'application de ticketing, l'infrastructure s'appuie sur une architecture système et réseau robuste :
-* **Hyperviseur de Virtualisation :** Microsoft Hyper-V (Création, allocation des ressources et gestion des commutateurs virtuels pour la communication réseau de la VM).
-* **Système d'Exploitation :** Linux Ubuntu Server 22.04 LTS (Système d'exploitation hébergeant l'application).
-* **Serveur Web :** Apache2 (Gestion et distribution des requêtes HTTP/HTTPS de l'interface de support).
-* **Gestionnaire de Base de Données :** MariaDB SQL (Stockage relationnel complet des tickets, historiques, utilisateurs et éléments du parc).
-* **Environnement d'Exécution :** PHP 8.1 avec la pile technologique LAMP (Linux, Apache, MySQL/MariaDB, PHP).
+### 🛠️ Spécifications de l'Environnement Technique
+Pour garantir l'isolation et la stabilité des services, l'infrastructure s'appuie sur la pile technologique suivante :
+* **Hyperviseur :** Microsoft Hyper-V (Hébergement de la machine virtuelle sur un commutateur interne isolé).
+* **Système d'Exploitation :** Linux Ubuntu Server 22.04 LTS.
+* **Serveur Web :** Apache2.
+* **Gestionnaire de Base de Données :** MariaDB (Fork open-source de MySQL).
+* **Environnement d'Exécution :** PHP 8.1 avec l'ensemble des modules requis pour GLPI.
 
 ---
 
-## 🚀 L'Architecture du Système de Ticketing & Support Informatique
-L'application GLPI a été configurée pour segmenter les accès et modéliser de bout en bout le cycle de vie d'une demande d'assistance :
+## 💻 Étape 1 : Interconnexion Réseau et Validation IP
 
-1. **Le Profil Demandeur / Utilisateur (Interface Self-Service) :** Un collaborateur standard peut se connecter via son navigateur pour déclarer une panne informatique, ouvrir un ticket, y joindre des éléments de contexte (captures d'écran) et suivre en temps réel l'avancement de sa demande d'aide.
-2. **Le Profil Technicien (Gestion des Interventions) :** Les membres du support reçoivent les alertes sur leur tableau de bord central. Ils ont la charge de qualifier le ticket, de définir un niveau de priorité (criticité de la panne), de s'attribuer la tâche, d'échanger avec l'utilisateur et d'apporter une solution technique.
-3. **Traçabilité et Historique :** Chaque ticket résolu est historisé et automatiquement corrélé aux fiches d'inventaire des matériels (ordinateurs, serveurs, commutateurs), permettant d'obtenir des statistiques de fiabilité sur le parc informatique de l'entreprise.
+La première phase absolue avant d'installer le moindre composant applicatif consiste à valider la connectivité réseau de notre serveur Linux Ubuntu. Cette étape permet de s'assurer que la machine virtuelle communique correctement à travers le commutateur virtuel de l'hyperviseur et qu'elle peut joindre sa passerelle réseau.
 
----
-
-## 🔧 Journal de Déploiement & Résolution des Incidents Techniques
-
-### 1. Initialisation, Conflit SQL et Résolution en Ligne de Commande (CLI)
-Lors de la phase initiale d'installation via l'assistant web, un incident majeur est survenu : un blocage dû à une mauvaise initialisation de la structure des tables SQL de test dans la base de données. 
-
-Pour corriger ce bug et repartir sur un environnement de ticketing sain, une intervention manuelle en ligne de commande (CLI) directement sur le moteur MariaDB a été menée pour réinitialiser les droits et la base de données dédiée :
+Pour ce faire, j'ai exécuté un test d'interconnexion à l'aide de la commande `ping` vers l'adresse IP cible de la passerelle de l'infrastructure (`192.168.1.200`).
 
 ```bash
-# Connexion sécurisée à l'interface de gestion MariaDB
-sudo mysql -u root -p
+admin-local@srv-ticketing:~$ ping -c 4 192.168.1.200
+![Test d'interconnexion réseau](02-test-ping-interconnexion.png)
+*Validation de la connectivité réseau avec 0% de perte de paquets lors du test de ping.*
 
-# Nettoyage de l'environnement : Suppression de la base corrompue
-DROP DATABASE glpidb;
-
-# Recréation d'une base de données vierge et saine pour le ticketing
-CREATE DATABASE glpidb;
-
-# Attribution des privilèges d'administration à l'utilisateur dédié
-GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'localhost';
-
-# Actualisation de la table des droits et déconnexion
-FLUSH PRIVILEGES;
-EXIT;
+---
