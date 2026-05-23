@@ -40,3 +40,19 @@ Cette phase installe le serveur Web chargé de distribuer les pages, le moteur d
 *Suivi de la fin du processus d'installation des paquets et bascule automatique vers le module Apache mpm_prefork.*
 
 ---
+
+## 💻 Étape 3 : Sécurisation Initiale du Système MariaDB
+
+Une fois la pile LAMP opérationnelle, la sécurité du système de gestion de base de données devient prioritaire. Pour interdire tout accès non autorisé à notre serveur SQL, j'ai exécuté le script officiel de durcissement de MariaDB.
+
+Cette manipulation essentielle permet de verrouiller l'accès au compte administrateur `root`, de supprimer les utilisateurs anonymes créés par défaut pour les tests, et de bloquer les connexions distantes non authentifiées.
+
+<br>
+
+![Sécurisation de la base de données MariaDB](04-securisation-mariadb.png)
+
+<br>
+
+*Exécution de la commande de sécurité et désactivation de l'authentification par socket UNIX pour privilégier un mot de passe fort.*
+
+---
