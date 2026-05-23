@@ -14,24 +14,29 @@ Passionnée par le durcissement des systèmes, l'architecture réseau et la séc
 
 ## 🛠️ Stack Technique & Compétences
 
-### 🖥️ Systèmes & Virtualisation
+### 💻 Systèmes & Virtualisation
 * **OS :** Windows Server, Linux (Debian, Ubuntu, Kali Linux)
-* **Services :** Active Directory, GPO, DNS, DHCP, Partages réseau & droits NTFS
-* **Hyperviseurs :** VMware, Hyper-V
+* **Services :** Active Directory, GPO, DNS, DHCP, Partages réseau & droits NTFS, Serveur Web Apache2/Nginx, Base de données MariaDB/MySQL
+* **Hyperviseurs :** VMware, Hyper-V, Proxmox
 
 ### 🌐 Réseaux & Sécurité
 * **Réseaux :** Architecture LAN (Cisco), TCP/IP, Routage Inter-VLAN (HSRP), Spanning Tree (RSTP), NAT/PAT, Segmentation
-* **Sécurité & Firewalls :** OPNSense, PfSense, DMZ, HAProxy (Reverse Proxy)
+* **Sécurité & Firewalls :** OPNsense, PfSense, DMZ, HAProxy (Reverse Proxy), Durcissement système (Principes des Moindres Privilèges)
 * **VPN :** Connexions inter-sites IPSec, Client-to-Site OpenVPN
 * **Supervision & Défense :** IDS/IPS Suricata, CrowdSec, Analyse de logs, Wireshark, Nmap
 
+### 🎫 Gestion de Services IT (ITSM)
+* **Outils :** GLPI (Gestion Libre de Parc Informatique)
+* **Bonnes pratiques :** Gestion des tickets de support (Incidents / Demandes), Inventaire automatisé des composants du parc informatique, Cycle de vie des équipements IT
+
 ---
 
-## 📁 Mes Projets
-* [cite_start]🛡️ **[Hackathon BAI 2026 – Sécurisation d'Infrastructure Réseau](./hackathon-2026)** *(Cluster OPNSense, VPN IPSec/OpenVPN, Suricata, CrowdSec, DMZ, HAProxy)* [cite: 108, 110, 111]
-* [cite_start]🏗️ **[Sécurisation et Supervision d'une Infrastructure IT Virtualisée](./infra-virtualisee)** *(Active Directory, GPOs, DNS/DHCP, Analyse de logs)* [cite: 96, 99, 100, 101, 104]
-* [cite_start]🔀 **[Design de LAN Cisco](./lan-design-cisco)** *(Modèle 2-tiers, VLANs, Trunks, VTP, RSTP, HSRP)* [cite: 21, 22]
-![Topologie du réseau LAN]
+## 📂 Mes Projets
+
+* 🛡️ **[Hackathon BAI 2026 - Sécurisation d'Infrastructure Réseau](./hackathon-2026)** *(Cluster OPNsense, VPN IPSec/OpenVPN, Suricata, CrowdSec, DMZ, HAProxy)*
+* 🏗️ **[Sécurisation et Supervision d'une Infrastructure IT Virtualisée](./infra-virtualisee)** *(Active Directory, GPOs, DNS/DHCP, Analyse de logs)*
+* 🔀 **[Design de LAN Cisco](./lan-design-cisco)** *(Modèle 2-tiers, VLANs, Trunks, VTP, RSTP, HSRP)*
+* 🎫 **[Déploiement et Sécurisation d'une Plateforme ITSM GLPI](./glpi-deployment)** *(Serveur Linux Ubuntu, Stack LAMP Apache/MariaDB/PHP, Gestion de Parc et de Tickets, Durcissement de Sécurité)*
 
 ---
 
