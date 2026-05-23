@@ -169,7 +169,7 @@ Cette étape confirme la réussite de l'opération en affichant un message de su
 
 <br>
 
-![Initialisation de la base de données réussie](./images/11-initialisation-base-de-donnees-glpi.png)
+![Initialisation de la base de données réussie](images/11-initialisation-base-de-donnees-glpi.png)
 
 <br>
 
@@ -185,7 +185,7 @@ L'assistant affiche une matrice de quatre comptes d'usine configurés pour diff�
 
 <br>
 
-![Fin de l'installation et comptes par défaut](12-fin-installation-identifiants-par-defaut-glpi.png)
+![Fin de l'installation de GLPI](images/12-fin-installation-glpi.png)
 
 <br>
 
@@ -201,7 +201,7 @@ Dès la connexion réussie, on arrive sur l'interface principale de gestion. Le 
 
 <br>
 
-![Première connexion au tableau de bord](13-premiere-connexion-tableau-de-bord-glpi.png)
+![Page de connexion GLPI](images/13-page-connexion-glpi.png)
 
 <br>
 
@@ -219,6 +219,7 @@ Ces actions de durcissement indispensables comprennent :
 
 <br>
 
+![Sécurisation et suppression du dossier install](images/14-suppression-dossier-install-glpi.png)
 ![Sécurisation finale post-installation](14-post-installation-securisation-finale-glpi.png)
 
 <br>
