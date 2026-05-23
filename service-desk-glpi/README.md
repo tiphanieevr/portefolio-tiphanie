@@ -23,9 +23,6 @@ La première phase absolue avant d'installer le moindre composant applicatif con
 
 Pour ce faire, j'ai exécuté un test d'interconnexion à l'aide de la commande `ping` vers l'adresse IP cible de la passerelle de l'infrastructure (`192.168.1.200`).
 
-```bash
-admin-local@srv-ticketing:~$ ping -c 4 192.168.1.200
-
 <br><br>
 
 ---
