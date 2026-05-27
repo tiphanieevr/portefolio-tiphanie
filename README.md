@@ -42,6 +42,7 @@ Passionnée par le durcissement des systèmes, l'architecture réseau et la séc
 * 🏗️ **[Sécurisation et Supervision d'une Infrastructure IT Virtualisée](./infra-virtualisee)** *(Active Directory, GPOs, DNS/DHCP, Analyse de logs)*
 * 🔀 **[Design de LAN Cisco](./lan-design-cisco)** *(Modèle 2-tiers, VLANs, Trunks, VTP, RSTP, HSRP)*
 * 🎫 **[Déploiement et Sécurisation d'une Plateforme ITSM GLPI](./glpi-deployment)** *(Serveur Linux Ubuntu, Stack LAMP Apache/MariaDB/PHP, Gestion de Parc et de Tickets, Durcissement de Sécurité)*
+* 🐳 **[Automatisation & Conteneurisation d'un Serveur Web Sécurisé (Docker)](#-focus-projet-5--automatisation--conteneurisation-dun-serveur-web-sécurisé-avec-docker)** *(Docker Compose, Nginx Reverse Proxy, Réseaux Bridge isolés, Volumes persistants)*
 
 ---
 
